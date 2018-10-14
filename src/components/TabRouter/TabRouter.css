@@ -1,0 +1,24 @@
+.tab-button {
+  width: calc(100% / 3);
+  padding: 6px 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+  color: rgb(42, 51, 77);
+  font-size: 200%;
+  font-family: MarkerFelt;
+  background: rgb(25, 26, 33);
+  outline: none;
+}
+
+.tab-button:hover {
+  color: rgb(60, 67, 94);
+  box-shadow: rgb(0, 0, 0) -5px 5px 10px;
+}
+
+.tab-button.active {
+  color: rgb(98, 114, 164);
+  background: rgb(40, 42, 54);
+  box-shadow: rgb(0, 0, 0) -5px 5px 10px;
+}

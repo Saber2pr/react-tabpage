@@ -1,28 +1,21 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import TabRouter from './components/TabRouter/TabRouter'
+import Home from './pages/Home/Home'
 
 class App extends Component {
   render() {
+    document
+      .querySelector('body')
+      .setAttribute('style', 'background-color:rgb(25, 26, 33)')
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <center>
+          <TabRouter />
+          <Home />
+        </center>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
