@@ -28,7 +28,7 @@ npm run test
 
 > TabRouter.jsx
 
-```react
+```jsx
 import React, { Component } from 'react'
 import './TabRouter.css'
 
@@ -71,7 +71,7 @@ export default class TabRouter extends Component {
 
 > App.js
 
-```react
+```jsx
 import React, { Component } from 'react'
 import TabRouter from './components/TabRouter/TabRouter'
 import Home from './pages/Home/Home'
@@ -108,7 +108,7 @@ export default App
 
 > Home.jsx
 
-```react
+```jsx
 import React, { Component } from 'react'
 import BaseLayout from '../../layout/base/Base'
 import Group from '../../components/Group/Group'
