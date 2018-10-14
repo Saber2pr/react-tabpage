@@ -12,8 +12,8 @@ export default class About extends Component {
   }
   render() {
     return (
-      <div>
-        <p className="aboutP">Call Me</p>
+      <div className="about">
+        <p>Call Me</p>
         <Group group={this.state.about} />
       </div>
     )

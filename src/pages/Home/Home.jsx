@@ -17,7 +17,7 @@ export default class Home extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="home">
         <BaseLayout>
           <p>{this.state.title}</p>
           <img src={this.state.logo} alt={'loading'} />

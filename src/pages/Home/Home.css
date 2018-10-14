@@ -1,16 +1,16 @@
-img {
-  width: 100px;
+.home img {
+  width: 200px;
   border-radius: 50%;
   overflow: hidden;
 }
 
-p {
+.home p {
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 150%;
 }
 
-a {
+.home a {
   font-size: 200%;
   width: 90px;
   margin-top: 30px;

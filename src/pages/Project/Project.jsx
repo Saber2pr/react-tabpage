@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Group from '../../components/Group/Group'
+import './Project.css'
 
 export default class Project extends Component {
   constructor(props) {
@@ -11,7 +12,7 @@ export default class Project extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="project">
         <Group group={this.state.projects} />
       </div>
     )

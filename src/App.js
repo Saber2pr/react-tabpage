@@ -4,6 +4,7 @@ import Home from './pages/Home/Home'
 import Project from './pages/Project/Project'
 import About from './pages/About/About'
 import index from './common/json/data.json'
+import './App.css'
 
 class App extends Component {
   render() {
@@ -11,7 +12,7 @@ class App extends Component {
       .querySelector('body')
       .setAttribute('style', 'background-color:rgb(25, 26, 33)')
     return (
-      <div className="App">
+      <div className="app">
         <center>
           <TabRouter>
             <Home data={index.home} />

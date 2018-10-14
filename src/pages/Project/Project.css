@@ -1,0 +1,16 @@
+.project img {
+  overflow: hidden;
+}
+
+.project p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 150%;
+}
+
+.project a {
+  font-size: 200%;
+  width: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
