@@ -24,6 +24,6 @@ a {
 }
 
 a:hover {
-  box-shadow: darkgrey 5px 5px 30px 5px;
+  box-shadow: rgba(204, 226, 126, 0.726) 5px 5px 30px 5px;
   color: rgb(116, 193, 210);
 }

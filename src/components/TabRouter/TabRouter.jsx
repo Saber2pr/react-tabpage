@@ -29,8 +29,8 @@ export default class TabRouter extends Component {
     let TAB = this.state.tabs.map((item, index) => (
       <button
         key={index}
-        className={'tab-button'}
         onClick={this.record.bind(this, index)}
+        className={'tab-button'}
       >
         {item}
       </button>
