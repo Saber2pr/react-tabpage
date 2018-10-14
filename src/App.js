@@ -7,14 +7,18 @@ import index from './common/json/data.json'
 import './App.css'
 
 class App extends Component {
+  getNames() {
+    let names = []
+    for (const o in index) {
+      names.push(o)
+    }
+    return names
+  }
   render() {
-    document
-      .querySelector('body')
-      .setAttribute('style', 'background-color:rgb(25, 26, 33)')
     return (
       <div className="app">
         <center>
-          <TabRouter>
+          <TabRouter tabs={this.getNames()}>
             <Home data={index.home} />
             <Project data={index.project} />
             <About data={index.about} />

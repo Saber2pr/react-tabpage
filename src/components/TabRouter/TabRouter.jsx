@@ -5,16 +5,9 @@ export default class TabRouter extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      tabs: this.getNames(),
+      tabs: props.tabs,
       currentTab: null
     }
-  }
-  getNames() {
-    let names = []
-    for (const child of this.props.children) {
-      names.push(child.type.name)
-    }
-    return names
   }
   set currentTab(tab) {
     this.setState({ currentTab: tab })
