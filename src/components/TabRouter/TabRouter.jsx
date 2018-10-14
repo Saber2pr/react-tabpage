@@ -23,9 +23,7 @@ export default class TabRouter extends Component {
     return this.state.currentTab || 0
   }
   record(order) {
-    let test = this.currentTab === order ? 'tab-button active' : 'tab-button'
     this.currentTab = order
-    return test
   }
   render() {
     let TAB = this.state.tabs.map((item, index) => (
