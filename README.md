@@ -8,7 +8,7 @@
 
 - easy to make a tabpage!
 
-> There is also a React demo like this:   
+> There is also a Vue demo like this:   
 > [vue-tabpage](https://github.com/Saber2pr/vue-tabpage)
 
 ## Build Setup
