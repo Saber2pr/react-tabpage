@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './TabRouter.css'
-import BaseLayout from '../../layout/base/Base'
 
 export default class TabRouter extends Component {
   constructor(props) {
@@ -24,7 +23,9 @@ export default class TabRouter extends Component {
     return this.state.currentTab || 0
   }
   record(order) {
+    let test = this.currentTab === order ? 'tab-button active' : 'tab-button'
     this.currentTab = order
+    return test
   }
   render() {
     let TAB = this.state.tabs.map((item, index) => (
@@ -38,10 +39,8 @@ export default class TabRouter extends Component {
     ))
     return (
       <div>
-        <BaseLayout>
-          {TAB}
-          {this.props.children[this.currentTab]}
-        </BaseLayout>
+        {TAB}
+        {this.props.children[this.currentTab]}
       </div>
     )
   }
