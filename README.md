@@ -144,3 +144,6 @@ export default class Home extends Component {
   }
 }
 ```
+### More pages just like this and the App will import them to use tabs to play.
+
+### ...
