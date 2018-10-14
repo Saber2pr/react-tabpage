@@ -3,7 +3,7 @@
     "title": "AK-12's Website",
     "logo": "https://github.com/Saber2pr/MyWeb/raw/master/resource/AK12.jpg",
     "author": "I am AK-12",
-    "readME": "the Website is based on Vue",
+    "readMe": "the Website is based on React",
     "websites": [{
       "name": "github",
       "href": "https://github.com/Saber2pr"
