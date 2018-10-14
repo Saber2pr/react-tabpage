@@ -1,20 +1,25 @@
 import React, { Component } from 'react'
+import BaseLayout from '../../layout/base/Base'
 
 export default class Home extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      title: null,
-      logo: null,
-      author: null,
-      readMe: null,
-      websites: null
+      title: props.data.title,
+      logo: props.data.logo,
+      author: props.data.author,
+      readMe: props.data.readMe,
+      websites: props.data.websites
     }
   }
   render() {
     return (
       <div>
-        <p>the Website is based on React</p>
+        <BaseLayout>
+          <p>{this.state.title}</p>
+          <p>{this.state.author}</p>
+          <p>{this.state.readMe}</p>
+        </BaseLayout>
       </div>
     )
   }

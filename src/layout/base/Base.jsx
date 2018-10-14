@@ -3,6 +3,6 @@ import './Base.css'
 
 export default class BaseLayout extends Component {
   render() {
-    return <div />
+    return <div>{this.props.children}</div>
   }
 }
