@@ -1,0 +1,10 @@
+{
+  "main.css": "./static/css/main.8dc07328.chunk.css",
+  "main.js": "./static/js/main.f9173887.chunk.js",
+  "static/js/1.13a15114.chunk.js": "./static/js/1.13a15114.chunk.js",
+  "runtime~main.js": "./static/js/runtime~main.4a686d48.js",
+  "static/media/Base.css": "./static/media/MarkerFelt.07945ed7.ttf",
+  "index.html": "./index.html",
+  "precache-manifest.7a1e19015d0f01015a37e5923a3559b1.js": "./precache-manifest.7a1e19015d0f01015a37e5923a3559b1.js",
+  "service-worker.js": "./service-worker.js"
+}
