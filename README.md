@@ -8,6 +8,9 @@
 
 - easy to make a tabpage!
 
+> There is also a React demo like this:   
+> [vue-tabpage](https://github.com/Saber2pr/vue-tabpage)
+
 ## Build Setup
 
 ```bash
