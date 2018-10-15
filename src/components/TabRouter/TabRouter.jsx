@@ -5,9 +5,19 @@ export default class TabRouter extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      tabs: props.tabs,
+      tabs: this.initArray(props.tabs),
       currentTab: null
     }
+  }
+  initArray(array) {
+    return Array.isArray(array) ? array : this.getTabs(array)
+  }
+  getTabs(array) {
+    let names = []
+    for (const o in array) {
+      names.push(o)
+    }
+    return names
   }
   set currentTab(tab) {
     this.setState({ currentTab: tab })
@@ -15,14 +25,13 @@ export default class TabRouter extends Component {
   get currentTab() {
     return this.state.currentTab || 0
   }
-  record(order) {
-    this.currentTab = order
-  }
   render() {
     let TAB = this.state.tabs.map((item, index) => (
       <button
         key={index}
-        onClick={this.record.bind(this, index)}
+        onClick={() => {
+          this.currentTab = index
+        }}
         className={'tab-button'}
       >
         {item}

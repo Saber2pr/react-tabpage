@@ -7,18 +7,11 @@ import index from './common/json/data.json'
 import './App.css'
 
 class App extends Component {
-  getNames() {
-    let names = []
-    for (const o in index) {
-      names.push(o)
-    }
-    return names
-  }
   render() {
     return (
       <div className="app">
         <center>
-          <TabRouter tabs={this.getNames()}>
+          <TabRouter tabs={index}>
             <Home data={index.home} />
             <Project data={index.project} />
             <About data={index.about} />
