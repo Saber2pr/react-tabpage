@@ -4,9 +4,12 @@
 
 ### preview
 
-![loadingImage...](https://github.com/Saber2pr/MyWeb/raw/master/resource/Vue.jpg)
+![loadingImage...](https://github.com/Saber2pr/MyWeb/raw/master/resource/React.jpg)
 
 - easy to make a tabpage!
+
+> There is also a Vue demo like this:   
+> [vue-tabpage](https://github.com/Saber2pr/vue-tabpage)
 
 ## Build Setup
 
@@ -28,7 +31,7 @@ npm run test
 
 > TabRouter.jsx
 
-```react
+```jsx
 import React, { Component } from 'react'
 import './TabRouter.css'
 
@@ -71,7 +74,7 @@ export default class TabRouter extends Component {
 
 > App.js
 
-```react
+```jsx
 import React, { Component } from 'react'
 import TabRouter from './components/TabRouter/TabRouter'
 import Home from './pages/Home/Home'
@@ -108,7 +111,7 @@ export default App
 
 > Home.jsx
 
-```react
+```jsx
 import React, { Component } from 'react'
 import BaseLayout from '../../layout/base/Base'
 import Group from '../../components/Group/Group'
@@ -141,3 +144,6 @@ export default class Home extends Component {
   }
 }
 ```
+### More pages just like this and the App will import them to use tabs to play.
+
+### ...
