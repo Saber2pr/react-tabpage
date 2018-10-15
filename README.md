@@ -8,7 +8,7 @@
 
 - easy to make a tabpage!
 
-> There is also a Vue demo like this:   
+> There is also a Vue demo like this:  
 > [vue-tabpage](https://github.com/Saber2pr/vue-tabpage)
 
 ## Build Setup
@@ -39,9 +39,19 @@ export default class TabRouter extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      tabs: props.tabs,
+      tabs: this.initArray(props.tabs),
       currentTab: null
     }
+  }
+  initArray(array) {
+    return Array.isArray(array) ? array : this.getTabs(array)
+  }
+  getTabs(array) {
+    let names = []
+    for (const o in array) {
+      names.push(o)
+    }
+    return names
   }
   set currentTab(tab) {
     this.setState({ currentTab: tab })
@@ -49,14 +59,13 @@ export default class TabRouter extends Component {
   get currentTab() {
     return this.state.currentTab || 0
   }
-  record(order) {
-    this.currentTab = order
-  }
   render() {
     let TAB = this.state.tabs.map((item, index) => (
       <button
         key={index}
-        onClick={this.record.bind(this, index)}
+        onClick={() => {
+          this.currentTab = index
+        }}
         className={'tab-button'}
       >
         {item}
@@ -84,18 +93,11 @@ import index from './common/json/data.json'
 import './App.css'
 
 class App extends Component {
-  getNames() {
-    let names = []
-    for (const o in index) {
-      names.push(o)
-    }
-    return names
-  }
   render() {
     return (
       <div className="app">
         <center>
-          <TabRouter tabs={this.getNames()}>
+          <TabRouter tabs={index}>
             <Home data={index.home} />
             <Project data={index.project} />
             <About data={index.about} />
@@ -144,6 +146,7 @@ export default class Home extends Component {
   }
 }
 ```
+
 ### More pages just like this and the App will import them to use tabs to play.
 
 ### ...
